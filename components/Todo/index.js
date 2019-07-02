@@ -120,8 +120,7 @@ _addPhoneNumber=(phone,name)=> {
                     if (!doc.exists) {
                       citiesRef.doc(phone).set({
                         name: name,
-                        points:0,
-                        
+                        points:2,
                         regions: ["west_coast", "norcal"] })
                       this.setState({
                         textInput: '',
